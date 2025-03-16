@@ -4,7 +4,7 @@ import { Footer } from "../../containers";
 import axios from "axios";
 import "./aboutUs.css";
 
-const baseUrl = "http://localhost:3333";
+const baseUrl = process.env.REACT_APP_API_URL;
 const customersUrl = `${baseUrl}/shelter-contents`;
 
 const AboutUs = () => {

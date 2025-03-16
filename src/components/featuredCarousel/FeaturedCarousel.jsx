@@ -6,7 +6,7 @@ import "./featuredCarousel.css";
 function FeaturedCarousel() {
   const [featuredPets, setFeaturedPets] = useState([]);
 
-  const baseURL = "http://localhost:3333/pets/featured";
+  const baseURL = `${process.env.REACT_APP_API_URL}/pets/featured`;
 
   const fetchData = async () => {
     const response = await fetch(baseURL);

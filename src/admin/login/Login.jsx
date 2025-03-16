@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import "./login.css";
 
-const baseUrl = "http://localhost:3333";
+const baseUrl = process.env.REACT_APP_API_URL;
 const customersUrl = `${baseUrl}/auth/signin`;
 
 const Login = () => {

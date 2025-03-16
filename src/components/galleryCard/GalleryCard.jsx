@@ -12,7 +12,8 @@ function GalleryCard() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = "http://localhost:3333/pets";
+      const url = `${process.env.REACT_APP_API_URL}/pets`;
+
       try {
         const response = await axios.get(url);
         setPets(response.data);

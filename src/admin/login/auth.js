@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiAuth = axios.create({
-  baseURL: 'http://localhost:3333', 
+  baseURL: process.env.REACT_APP_API_URL, 
 });
 
 export const sendRecoveryEmail = async (email) => {

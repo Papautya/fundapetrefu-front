@@ -16,7 +16,7 @@ import "./adoptSurvey.css";
 import axios from "axios";
 import "./adoptSurvey.css";
 
-const baseUrl = "http://localhost:3333";
+const baseUrl = process.env.REACT_APP_API_URL;
 const customersUrl = `${baseUrl}/survey-fields`;
 
 function AdoptSurvey() {

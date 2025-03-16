@@ -9,7 +9,7 @@ function Pet() {
   let { id } = useParams();
 
   useEffect(() => {
-    const baseURL = `http://localhost:3333/pets/${id}`;
+    const baseURL = `${process.env.REACT_APP_API_URL}/pets/${id}`;
     const fetchData = async () => {
       const response = await fetch(baseURL);
       const data = await response.json();

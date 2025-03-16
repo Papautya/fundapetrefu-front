@@ -3,7 +3,7 @@ import { Navbar } from "../../components";
 import { Footer } from "../../containers";
 import axios from "axios";
 
-const baseUrl = "http://localhost:3333";
+const baseUrl = process.env.REACT_APP_API_URL;
 const customersUrl = `${baseUrl}/supports`;
 
 const Support = () => {
