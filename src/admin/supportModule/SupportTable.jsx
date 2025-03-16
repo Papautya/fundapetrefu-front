@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import DataTable from "react-data-table-component";
 import { FaEdit, FaTimes } from "react-icons/fa";
 import Swal from "sweetalert2";

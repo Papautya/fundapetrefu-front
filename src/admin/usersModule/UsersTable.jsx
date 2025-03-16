@@ -15,7 +15,7 @@ const UsersTable = ({ data, handleEdit, handleDelete, setShowModal }) => {
   const handleResetPassword = async (dniNumber) => {
     try {
       const dniNumberAsNumber = Number(dniNumber);
-      const response = await api.post(`/users/reset-password`, { dniNumber: dniNumberAsNumber });
+      await api.post(`/users/reset-password`, { dniNumber: dniNumberAsNumber });
       alert("Contraseña restaurada con éxito");
     } catch (error) {
       alert("Error al restaurar la contraseña");
